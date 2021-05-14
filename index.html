@@ -1,1 +1,19 @@
-Hello!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<input/>
+<a></a>
+<script>
+  document.querySelector('input')
+    .addEventListener('input', function (e) {
+      const a = document.querySelector('a');
+      const innerText = e.target.value;
+      a.innerText = innerText;
+      a.href = innerText;
+    });
+</script>
+</body>
+</html>
